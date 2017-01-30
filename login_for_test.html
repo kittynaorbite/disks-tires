@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.sima-land.ru/" />
+<title>login_for_test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">login_for_test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/auth/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=body#auth_page</td>
+	<td>na</td>
+</tr>
+<tr>
+	<td>if</td>
+	<td>${na}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span#login-js-tab</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input#login-entity</td>
+	<td>webdev2@sima-land.ru</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input#login-password</td>
+	<td>123456789</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.button_blue[value=&quot;ВОЙТИ&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endIf</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=a.b-circle_usr[href=&quot;/cabinet/&quot;]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
